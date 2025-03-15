@@ -5,7 +5,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { incrementQuantity, decrementQuantity } from "./venueSlice";
 import { incrementAvQuantity, decrementAvQuantity } from "./avSlice";
 import { toggleMealSelection } from "./mealsSlice";
-
+//items
 const ConferenceEvent = () => {
     const [showItems, setShowItems] = useState(false);
     const [numberOfPeople, setNumberOfPeople] = useState(1);
@@ -77,7 +77,7 @@ const ConferenceEvent = () => {
         return items;
     };
 
-    //const items = getItemsFromTotalCost();
+    const items = getItemsFromTotalCost();
 
     const ItemsDisplay = ({ items }) => {
           console.log(items);
